@@ -1,0 +1,112 @@
+/*******
+Hey! If you're reading this I assume you fall into one of three categories:
+	1- You are a fellow developer who is trying to work out how I did something, or just looking out of curiosity
+		to you I say, please feel free to pilfer pillage and plunder any and all code. It is all released under an MIT
+		license. If you do use the code, or it helps you solve a problem, or you just want to be nice.. Consider shouting
+		me a coffee, which you can do here: https://www.buymeacoffee.com/KeeghanM
+
+	2- A potential employer, looking at how I write code and whether or not all this is just a copy paste from
+		StackOverflow or I used some template and just claimed it's my work. Hint: It's not. And you should	email me.
+
+	3- A hacker, script-kiddie, or some kind of bot mining sites for vulnerabilities. In which case, kindly piss off!
+*******/
+
+/******** LAYOUT COMPONENTS ********/
+.panel {
+	width: 100%;
+	min-height: 100vh;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/******** DISPLAY TYPES ********/
+.center{
+	text-align: center;
+}
+.vert-center{ 
+  /*position: relative;*/
+  padding-top: 15%;
+  /*transform: translateY(-55%);*/
+}
+
+/******** FONTS / HEADERS ********/
+html,body {
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	font-size: 500%;
+}
+h2 {
+	font-size: 400%;
+}
+h3 {
+	font-size: 300%;
+}
+h4 {
+	font-size: 200%;
+}
+.header {
+	font-family: 'Rozha One', serif;
+	margin: 10px;
+}
+.underline {
+	border-bottom: 3px solid;
+}
+.italic {
+	font-style: italic;
+}
+
+
+/******** COLORS ********/
+.primary {
+	background-color: #D07300;
+}
+.secondary {
+	background-color: #16BF69;
+}
+.highlight {
+	background-color: #FF991B;
+}
+.dark {
+	background-color: #180D00;
+}
+.accent {
+	background-color: #0C1264;
+}
+.text-primary {
+	color: #D07300;
+}
+.text-secondary {
+	color: #16BF69;
+}
+.text-highlight {
+	color: #FF991B;
+}
+.text-dark {
+	color: #180D00;
+}.text-accent {
+	color: #0C1264;
+}
+
+/******** EXTRA ********/
+#job-title {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+#job-title:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    animation: timerLine 5s ease infinite;
+}
+@keyframes timerLine{
+  from {width: 0; background: transparent;}
+  to {width: 100%; background: #0C1264;}
+}
