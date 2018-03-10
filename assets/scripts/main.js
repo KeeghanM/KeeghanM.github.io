@@ -14,5 +14,9 @@ let jobs = ['Yes Man', 'Go To Guy', 'Jack Of All Trades', 'Problem Solver']
 let job = 0
 
 $(document).ready(function () {
+  // this is the line that displays the rotating job titles
   let jobInterval = setInterval(() => $('#job-title').text(jobs[job < jobs.length - 1 ? job += 1 : job = 0]), 5000)
+
+  // Any .scroll element will scroll you smoothly to it's href
+  $('.scroll').click(function () { $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500) })
 })
